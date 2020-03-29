@@ -1,0 +1,19 @@
+{
+  "name": "cst336lab7",
+  "version": "1.0.0",
+  "description": "a remake of cst336s2020 Lab5 using express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enyaw15/cst336Lab7.git"
+  },
+  "author": "Wayne Hayden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enyaw15/cst336Lab7/issues"
+  },
+  "homepage": "https://github.com/enyaw15/cst336Lab7#readme"
+}
