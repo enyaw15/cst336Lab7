@@ -1,6 +1,28 @@
 
 <%- include("templates/header") -%>
 
-    <h1>Pixabay image search</h1>
+    <div class = "container">
+        <header class = "jumbotron">
+            <h1>
+                Pixabay Image Search Home
+            </h1>
+            <form action = "/search" method = "GET">
+                <div>
+                    <label for = "keyword">Keyword </label>
+                    <input name = "keyword" type = "text" value = "flower"/>
+                </div>
+                <div>
+                    <label for = "orientation">Orientation </label>
+                    <select name = "orientation">
+                        <option value = "h">Horizontal</option>
+                        <option value = "v">Vertical</option>
+                    </select>
+                </div> 
+                <button id = "search" class = "btn btn-outline-primary">Search</button>
+            </form>
+        </header>
+        
+        <hr>
+    </div>
     
 <%- include("templates/footer") -%>

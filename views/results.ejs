@@ -1,0 +1,46 @@
+
+<%- include("templates/header") -%>
+
+    <div class = "container">
+        <header class = "jumbotron">
+            <h1>
+                Pixabay Image Search
+            </h1>
+            <form action = "/search" method = "GET">
+                <div>
+                    <label for = "keyword">Keyword </label>
+                    <input name = "keyword" type = "text" value = "<%=keyword%>"/>
+                </div>
+                <div>
+                    <label for = "orientation">Orientation </label>
+                    <select name = "orientation">
+                        <option value = "h">Horizontal</option>
+                        <option value = "v">Vertical</option>
+                    </select>
+                </div> 
+                <button id = "search" class = "btn btn-outline-primary">Search</button>
+            </form>
+        </header>
+        
+        <hr>
+        <div id = "image-display" class = "row">
+            <div class = "col-sm">
+                Likes: <%=images[0].likes%>
+                <img src = "<%=images[0].previewURL%>" width = "<%=images[0].previewWidth%>" height = "<%=images[0].previewHeigt%>"/>
+            </div>
+            <div class = "col-sm">
+                Likes: <%=images[1].likes%>
+                <img src = "<%=images[1].previewURL%>" width = "<%=images[1].previewWidth%>" height = "<%=images[1].previewHeigt%>"/>
+            </div>
+            <div class = "col-sm">
+                Likes: <%=images[2].likes%>
+                <img src = "<%=images[2].previewURL%>" width = "<%=images[2].previewWidth%>" height = "<%=images[2].previewHeigt%>"/>
+            </div>
+            <div class = "col-sm">
+                Likes: <%=images[3].likes%>
+                <img src = "<%=images[3].previewURL%>" width = "<%=images[3].previewWidth%>" height = "<%=images[3].previewHeigt%>"/>
+            </div>
+        </div>
+    </div>
+    
+<%- include("templates/footer") -%>

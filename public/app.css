@@ -1,0 +1,17 @@
+body{
+    color: midnightblue;
+    background-color: lemonchiffon;
+}
+
+jumbotron{
+    background-color:darkorange;
+}
+
+input[type=text]{
+    border: 2px solid midnightblue;
+    background-color: seashell;
+}
+
+img{
+    border: 4px solid midnightblue;
+}
